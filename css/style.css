@@ -73,8 +73,7 @@ h1,
 .nav {
   font-family: "Patrick Hand", cursive;
   background-color: blue;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px;
 }
 
 .nav-top {
@@ -110,15 +109,12 @@ h1,
 .copyrate {
   background-color: blue;
   color: yellow;
-  width: 100vw;
-  font-size: 14px;
-  font-weight: 300;
+  width: 100%;
+  max-width: 1240px;
   text-align: center;
   position: fixed;
   bottom: 0;
-  right: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px;
 }
 
 .latter::first-letter {
@@ -129,8 +125,9 @@ h1,
 
 .catalog-style {
   list-style: none;
+  padding: 5px 10px;
+  margin: 5px;
   margin-right: 800px;
-  padding-right: 0;
   background-color: aqua;
 }
 
@@ -139,25 +136,46 @@ i.new::after {
   color: azure;
   background-color: orange;
   font-size: 95%;
-  padding: 0;
+  padding: 0 5px;
   margin-left: 8px;
   font-family: "Raleway", sans-serif;
 }
 
-.picture-frame {
+.picture-frame-img {
   border-color: yellow;
   border-style: solid;
   border-width: 3px;
+  display: block;
 }
 
-.picture-frame:hover {
+.picture-frame {
+  float: right;
+  margin: 39px;
+}
+
+.picture-frame-img:hover {
   border-color: transparent;
+}
+
+.soccer-fields {
+  margin: 70px;
+  color: yellow;
+}
+
+.tennis-court {
+  margin: 93px;
+  color: yellow;
+}
+
+.Basketball-court {
+  margin: 58px;
+  color: yellow;
 }
 
 fieldset {
   max-width: 500px;
   margin: 25px auto;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   font-size: 15px;
   font-weight: 600;
 }
@@ -186,6 +204,7 @@ input[type="file"] {
 .form-group:not(:first-of-type) {
   margin: 15px 0 5px;
 }
+
 .form-group-sm {
   margin: 10px 0 5px;
 }
